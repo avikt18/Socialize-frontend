@@ -1,0 +1,9 @@
+.post-screen {
+    min-height: 93vh;
+}
+
+.post-screen .non-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--top-padding);
+}

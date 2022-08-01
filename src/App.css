@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    user-select: none;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none ;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    pointer-events: none;
+}
+
+input {
+    border: none;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: none;
+}
+
+.app {
+    position: relative;
+}
+
+.container {
+    padding: 0 var(--side-padding);
+}
+
+/* input:: */

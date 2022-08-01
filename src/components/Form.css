@@ -1,0 +1,145 @@
+:root {
+    --error-red: rgb(222 64 64);
+}
+
+.form-container {
+    background: var(--gray-gradient);
+    border-radius: 14px;
+    padding: 2em;
+    min-width: 422px;
+    height: max-content;
+    transition: opacity 0.5s;
+    opacity: 0.7;
+}
+
+.form-focus {
+    opacity: 1;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form textarea {
+    padding: 0.8em;
+    background: linear-gradient(90.4deg, #646464 1.17%, rgba(100, 100, 100, 0) 105.57%);
+    border: none;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    resize: none;
+    color: white;
+    font-size: 14px;
+}
+
+.tag {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.tag>input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+#image-upload {
+    color: rgb(255,255,255, 0.6)
+}
+
+.form .blue-btn {
+    background: linear-gradient(26deg, #5FE9E9 -4.22%, rgba(69, 104, 231, 0.18) 96.23%);
+    border-radius: 5px;
+    border: none;
+    color: rgb(233, 233, 233);
+    padding: 0 1em;
+    font-weight: medium;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.4s;
+    opacity: 0.6;
+    margin-top: 0.5em;
+}
+
+.form .blue-btn:not(:disabled) {
+    opacity: 0.8;
+}
+
+.form .blue-btn:not(:disabled):hover {
+    opacity: 1;
+    filter: saturate(1.3);
+}
+
+.tag-container {
+    margin-bottom: 0.5em;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-list>p {
+    background: var(--gray-gradient);
+    padding: 0.3em;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    color: rgb(255,255,255, 0.6);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: var(--error-red);
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+    transition: all 0.3s;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/* .form .file-input {
+    display: none;
+}
+
+.choosefile-btn {
+    padding: 0.8em;
+    background: linear-gradient(90.4deg, #646464 1.17%, rgba(100, 100, 100, 0) 105.57%);
+    border: none;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    color: white;
+} */
+
+

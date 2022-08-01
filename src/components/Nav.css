@@ -1,0 +1,57 @@
+.nav {
+  padding: 1.2em 8%;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)); */
+  backdrop-filter: blur(2px);
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-heading a {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  /* height: min-content; */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1400px; */
+}
+
+.logo {
+  height: 27px;
+}
+
+.nav-heading {
+  display: flex;
+}
+
+.title {
+  font-weight: 600;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.create-account-btn {
+  background: rgba(131, 131, 131, 0.14);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 0 1em;
+  font-weight: 500;
+  height: 40px;
+  transition: all 0.3s;
+}
+
+.create-account-btn:not(:disabled):hover {
+  background: rgba(131, 131, 131, 0.24);
+}
+
+.create-account-btn:disabled {
+  opacity: 0.5;
+}
